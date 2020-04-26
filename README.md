@@ -54,6 +54,7 @@
 ## Dependencies
 Hopefully sometime I can provide a dockerfile. This is sofar based on Apache2.4 with PHP7.X
 
+The [receiving side](https://github.com/jarvis-owl/node_post).
 
 ## SRC
 [sidebar html](https://bootstrapious.com/p/bootstrap-sidebar)
@@ -61,4 +62,4 @@ Hopefully sometime I can provide a dockerfile. This is sofar based on Apache2.4 
 ---
 
 - Tab Length = 4 Spaces
-- consise issue titles
+- concise issue titles

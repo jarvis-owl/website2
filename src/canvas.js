@@ -9,7 +9,7 @@ $(function() {
           lineTension: 0,
           backgroundColor: 'transparent',
           borderColor: '#007bff',
-          borderWidth: 4,
+          borderWidth: 2,
           pointBackgroundColor: '#007bff'
         }]
     },

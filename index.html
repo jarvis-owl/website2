@@ -25,19 +25,21 @@
         ===================================================================-->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Command and Control</h3>
+                <a href="/index.html">
+                    <h3>Command and Control</h3>
+                </a>
             </div>
 
             <ul class="list-unstyled components">
-                <p>sidebar</p>
+                <!-- <p>sidebar</p> -->
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Project A</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">Home 1</a>
+                            <a href="#">subsite 1</a>
                         </li>
                         <li>
-                            <a href="#">Home 2</a>
+                            <a href="#">subsite 2</a>
                         </li>
                         <li>
                             <a href="/sub/clientinfo.html">client info</a>
@@ -46,23 +48,26 @@
                 </li>
 
                 <li>
-                    <a href="/index.html1">Main</a>
+                    <a href="/index.html">Project B</a>
                 </li>
 
             </ul>
 
             <ul class="list-unstyled CTAs">
                 <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                    <a href="https://github.com/jarvis-owl/website2" class="download">Page Repo</a>
                 </li>
                 <li>
                     <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+                <li>
+                    <div id='datetime'>loaded now()</div>
                 </li>
             </ul>
         </nav>
 
         <!-- ===================================================================
-                                Page Content
+                                    Title
         ===================================================================-->
         <div id="content">
 
@@ -71,7 +76,7 @@
 
                     <button type="button" id="sidebarCollapse" class="btn btn-dark">
                         <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
+                        <span></span>
                     </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
@@ -92,17 +97,24 @@
                     </div>
                 </div>
             </nav>
-
+            <!-- ===================================================================
+                                        Content
+            ===================================================================-->
             <h2>Main Page</h2>
-
-            <img class="img-fluid" id="actual_img" alt="actual_graphs" src = "img/mac.png" \>
-            <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
-
-
+            <div class="container-fluid" >
+                <div class="row row-no-gutters">
+                    <div class="col-md-6 col-sm-12">
+                        <img class="img-fluid" id="actual_img" alt="actual_graphs" src = "img/mac.png" \>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <canvas class="my-4" id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
             <div class="line"></div>
 
 
-            <h3>Lorem Ipsum Dolor</h3>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
@@ -117,7 +129,6 @@
     <script src="src/source.js"></script>
     <script src="src/chart.min.js"></script>
     <script src="src/canvas.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="src/cookies.js"></script>
 
 </body>
