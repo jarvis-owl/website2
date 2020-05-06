@@ -5,6 +5,14 @@ $(document).ready(function () {
         $('#sidebar').toggleClass('active');
     });
 
+    document.getElementById("text").innerHTML = "Hello Dolly.";
+
+
+    $.get("http://rpi3:49160", {}, function(results){
+      alert(results); // will show the HTML from anotherPage.html
+      alert($(results).find("div.scores").html()); // show "scores" div in results
+    });
+
 });
 
 var array = [["A1","B1","C1"],
@@ -105,4 +113,15 @@ for (var key in p) {
     }
 }
 
-document.getElementById("text").innerHTML = "Hello Dolly.";
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("text").innerHTML = this.responseText;
+      alert('here');
+      }
+  };
+  xhttp.open("POST", "http://rpi3:49160/", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("fname=Henry&lname=Ford");
+}

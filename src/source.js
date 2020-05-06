@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {      //wait for websi
 }, false); //}addEventListener
 
 
-
+//reload an image
 $(function() {
   var intervalMS = 5000;
       setInterval(function() {
