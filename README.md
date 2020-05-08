@@ -26,14 +26,17 @@
     - Chart.js
         - [ ] µCs BME260 Data
         - [ ] Provide interface for µCs data (Temperature, RPM-Project, ...)
-            - [ ] Temperature
+            - [x] Temperature
             - [ ] RPI Project
             - [ ] Sun's brightness (for a future lamp to turn on/off)
 - [ ] repeating background texture
 - [ ] Favicon
 
+## Additional scripts required
+- `temp_log.sh >> /Tcore.log`
+
 ## Future
-- [ ] use Docker
+- [x] use Docker
     - start container `docker run -d --restart=always --name website2 -p 80:80 -v /home/pi/website:/usr/local/apache2/htdocs/ httpd:latest`
     - [ ] test nginx?
 - [ ] Test cloud server with Kubernetes
