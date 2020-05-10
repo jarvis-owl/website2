@@ -1,10 +1,6 @@
 
 
-
 document.addEventListener('DOMContentLoaded', function() {      //wait for website to finish loading
-
-
-
     // $("#test").hide()		//verify working JS
 
     //print loaded datetime
@@ -21,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {      //wait for websi
 
 //reload an image
 $(function() {
-  var intervalMS = 5000;
+  const intervalMS = 1000;
       setInterval(function() {
-        $("#actual_img").prop("src", "img/img.png?" + +new Date());
+        $("#actual_img").prop("src", "img/actual.png?" + +new Date());
 
 
    }, intervalMS);
@@ -41,7 +37,7 @@ $(document).ready(function () {
 
 // reload complete page for debugging purposes
 $(function() {
-   var intervalMS = 60000; //default 30s=300000 ; 28.09.'17 changed to 300s as also log interval in shellscript
+   const intervalMS = 60000; //default 30s=300000 ; 28.09.'17 changed to 300s as also log interval in shellscript
    setInterval(function() {
       location.reload();
  }, intervalMS);
