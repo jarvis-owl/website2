@@ -33,7 +33,9 @@
 - [ ] Favicon
 
 ## Additional scripts required
+ ref to [pi_scripts](#empty)
 - `temp_log.sh >> /Tcore.log`
+- `plain_photos.py` intervall needs to match websites update interval
 
 ## Future
 - [x] use Docker
@@ -42,15 +44,15 @@
 - [ ] Test cloud server with Kubernetes
 
 ## Directories
-- /img
+- `/img`
 
     Contains displayed images and pictures
 
-- /src
+- `/src`
 
     Contains all javascript code
 
-- /style
+- `/style`
 
     Contains CSS Style
 
@@ -61,6 +63,19 @@ The [receiving side](https://github.com/jarvis-owl/node_post).
 
 ## SRC
 [sidebar html](https://bootstrapious.com/p/bootstrap-sidebar)
+
+
+## log
+
+##### state 1
+![state 1](misc/state_2020-05-10-173752.png)
+
+## misc
+
+#### Rpi3 bootup temp
+![bootup temp](misc/pi_boottemp.png)
+
+
 
 ---
 

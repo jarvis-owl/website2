@@ -20,6 +20,7 @@ $(function() {
   const intervalMS = 1000;
       setInterval(function() {
         $("#actual_img").prop("src", "img/actual.png?" + +new Date());
+        $("#latest_motion").prop("src", "img/latest_motion.png?" + +new Date());
 
 
    }, intervalMS);
@@ -42,10 +43,3 @@ $(function() {
       location.reload();
  }, intervalMS);
 });
-
-
-function pad(num, size) {
-    var s = num+"";
-    while (s.length < size) s = "0" + s;
-    return s;
-}

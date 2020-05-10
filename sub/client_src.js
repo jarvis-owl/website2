@@ -6,7 +6,14 @@ $(document).ready(function () {
     });
 
     document.getElementById("text").innerHTML = "Hello Dolly.";
-
+    
+    //print loaded datetime
+    var loaded = new Date();
+    let h = loaded.getHours();
+    let m = loaded.getMinutes();
+    let s = loaded.getSeconds();
+    var datetime_str = pad(h,2)+':'+pad(m,2)+':'+pad(s,2);
+    document.getElementById("datetime").innerHTML = datetime_str ;
 
     $.get("http://rpi3:49160", {}, function(results){
       alert(results); // will show the HTML from anotherPage.html

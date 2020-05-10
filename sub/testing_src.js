@@ -24,8 +24,15 @@ $(document).ready(function () {
         });
     });
 
-    document.getElementById("text").innerHTML = "JS works";
+    //print loaded datetime
+    var loaded = new Date();
+    let h = loaded.getHours();
+    let m = loaded.getMinutes();
+    let s = loaded.getSeconds();
+    var datetime_str = pad(h,2)+':'+pad(m,2)+':'+pad(s,2);
+    document.getElementById("datetime").innerHTML = datetime_str ;
 
+    document.getElementById("text").innerHTML = "JS works";
 });
 
 

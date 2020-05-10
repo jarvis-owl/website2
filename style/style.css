@@ -119,3 +119,7 @@ a[data-toggle="collapse"] {
 .my-row{
     border: 1px solid red;
 }
+
+    border: 1px dashed gray;
+    margin: 3px;
+}
